@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', serif;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#info {
+    z-index: 1000;
+    position: absolute;
+    width: 500px;
+    top: 1%;
+    bottom: 1%;
+    left: .5%;
+    padding: 40px 15px 900px 15px;
+    background: #343a40;
+    color: white;
+}
+
+/* social media icons */
+#info a {
+    color: lightgray;
+}
+
+#info a:hover {
+    color: white;
+    opacity: 0.3;
+}
+
+#title {
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* social media icons */
+#title span {
+    font-size: 14px;
+    float: right;
+    margin-right: 10px;
+}
+
+#desc {
+    text-align: center;
+    color: lightgray;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#flu-death-count {
+    margin: 0;
+    text-align: center;
+    color: orange;
+    font-size: 50px;
+}
+
+#flu-chart {
+    top: 20px;
+}
+
+
+.map-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-item span {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+#footer {
+    position: relative;
+    margin-top: 20px; /* Adjust spacing */
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+#reset {
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure button is above other elements */
+}
+
+/* Existing CSS styles */
+
+/* Add this CSS for the legend card */
+.legend-card {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+
